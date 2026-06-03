@@ -187,69 +187,69 @@ export function LandingPricing() {
     }
   ]
 
-  return (
-    <section id="pricing" className="py-24">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 border-primary/50 text-primary">
-            Precios
-          </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Planes que se adaptan a tu operación
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Sin contratos a largo plazo. Cancela cuando quieras.
-          </p>
-        </div>
+  // return (
+  //   <section id="pricing" className="py-24">
+  //     <div className="container mx-auto px-4">
+  //       <div className="text-center mb-16">
+  //         <Badge variant="outline" className="mb-4 border-primary/50 text-primary">
+  //           Precios
+  //         </Badge>
+  //         <h2 className="text-3xl md:text-4xl font-bold mb-4">
+  //           Planes que se adaptan a tu operación
+  //         </h2>
+  //         <p className="text-muted-foreground max-w-2xl mx-auto">
+  //           Sin contratos a largo plazo. Cancela cuando quieras.
+  //         </p>
+  //       </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {plans.map((plan, index) => (
-            <Card 
-              key={index} 
-              className={`relative ${plan.popular ? 'border-primary shadow-lg shadow-primary/10' : 'bg-card/50 border-border/50'}`}
-            >
-              {plan.popular && (
-                <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  Más Popular
-                </Badge>
-              )}
-              <CardHeader className="text-center pb-2">
-                <CardTitle className="text-xl">{plan.name}</CardTitle>
-                <CardDescription>{plan.description}</CardDescription>
-                <div className="mt-4">
-                  <span className="text-4xl font-bold">
-                    {plan.price === 'Consultar' ? '' : '$'}
-                    {plan.price}
-                  </span>
-                  {plan.price !== 'Consultar' && (
-                    <span className="text-muted-foreground">/mes</span>
-                  )}
-                </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  {plan.features.map((feature, i) => (
-                    <li key={i} className="flex items-center gap-2 text-sm">
-                      <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link href="/registro" className="block mt-6">
-                  <Button 
-                    className="w-full" 
-                    variant={plan.popular ? 'default' : 'outline'}
-                  >
-                    {plan.price === 'Consultar' ? 'Contactar Ventas' : 'Comenzar Ahora'}
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </div>
-    </section>
-  )
+  //       <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+  //         {plans.map((plan, index) => (
+  //           <Card 
+  //             key={index} 
+  //             className={`relative ${plan.popular ? 'border-primary shadow-lg shadow-primary/10' : 'bg-card/50 border-border/50'}`}
+  //           >
+  //             {plan.popular && (
+  //               <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">
+  //                 Más Popular
+  //               </Badge>
+  //             )}
+  //             <CardHeader className="text-center pb-2">
+  //               <CardTitle className="text-xl">{plan.name}</CardTitle>
+  //               <CardDescription>{plan.description}</CardDescription>
+  //               <div className="mt-4">
+  //                 <span className="text-4xl font-bold">
+  //                   {plan.price === 'Consultar' ? '' : '$'}
+  //                   {plan.price}
+  //                 </span>
+  //                 {plan.price !== 'Consultar' && (
+  //                   <span className="text-muted-foreground">/mes</span>
+  //                 )}
+  //               </div>
+  //             </CardHeader>
+  //             <CardContent>
+  //               <ul className="space-y-3">
+  //                 {plan.features.map((feature, i) => (
+  //                   <li key={i} className="flex items-center gap-2 text-sm">
+  //                     <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0" />
+  //                     <span>{feature}</span>
+  //                   </li>
+  //                 ))}
+  //               </ul>
+  //               <Link href="/registro" className="block mt-6">
+  //                 <Button 
+  //                   className="w-full" 
+  //                   variant={plan.popular ? 'default' : 'outline'}
+  //                 >
+  //                   {plan.price === 'Consultar' ? 'Contactar Ventas' : 'Comenzar Ahora'}
+  //                 </Button>
+  //               </Link>
+  //             </CardContent>
+  //           </Card>
+  //         ))}
+  //       </div>
+  //     </div>
+  //   </section>
+  // )
 }
 
 export function LandingCTA() {
