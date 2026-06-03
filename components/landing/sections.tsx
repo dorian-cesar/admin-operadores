@@ -23,7 +23,7 @@ export function LandingHero() {
         </Badge>
         
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 text-balance">
-          <span className="text-foreground">Haciendo Camino al Andar</span>
+          <span className="text-foreground">Gestion integral de transporte</span>
           <br />
           <span className="text-primary">OLA SpA</span>
         </h1>
