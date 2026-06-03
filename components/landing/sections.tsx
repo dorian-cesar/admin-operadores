@@ -18,9 +18,7 @@ export function LandingHero() {
       </div>
       
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
-        <Badge variant="outline" className="mb-6 border-primary/50 text-primary">
-          Gestión Integral de Transporte
-        </Badge>
+
         
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 text-balance">
           <span className="text-foreground">Gestion integral de transporte</span>

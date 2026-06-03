@@ -21,7 +21,7 @@ const navItems = [
   { label: 'Producción', href: '/dashboard/produccion' },
   { label: 'Asignación', href: '/dashboard/asignacion', hasDropdown: true },
   { label: 'Indicadores', href: '/dashboard/indicadores' },
-  { label: 'Soporte', href: '/dashboard/soporte' },
+ // { label: 'Soporte', href: '/dashboard/soporte' },
 ]
 
 export function Header() {
