@@ -1,4 +1,10 @@
-# Configuration file for pnpm v9+ to allow execution of lifecycle scripts for dependencies
+# Configuration file for pnpm to allow execution of lifecycle scripts for dependencies
+# For pnpm v10:
+onlyBuiltDependencies:
+  - msw
+  - sharp
+
+# For pnpm v11+:
 allowBuilds:
   - msw
   - sharp
