@@ -1,0 +1,4 @@
+# Configuration file for pnpm v9+ to allow execution of lifecycle scripts for dependencies
+allowBuilds:
+  - msw
+  - sharp
