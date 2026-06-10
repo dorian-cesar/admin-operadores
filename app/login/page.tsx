@@ -8,7 +8,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { useAuth } from '@/lib/auth-context'
-import { Bus, Loader2, ArrowLeft } from 'lucide-react'
+import { Loader2, ArrowLeft } from 'lucide-react'
+import { Logo } from '@/components/layout/logo'
 import { toast } from 'sonner'
 
 export default function LoginPage() {
@@ -51,10 +52,8 @@ export default function LoginPage() {
 
         <Card className="border-border/50">
           <CardHeader className="text-center">
-            <Link href="/" className="flex items-center justify-center gap-2 mb-4">
-              <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10">
-                <Bus className="h-7 w-7 text-primary" />
-              </div>
+            <Link href="/" className="flex items-center justify-center mb-4">
+              <Logo size="lg" showText={false} />
             </Link>
             <CardTitle className="text-2xl">Bienvenido de vuelta</CardTitle>
             <CardDescription>

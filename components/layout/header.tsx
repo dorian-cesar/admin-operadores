@@ -11,8 +11,9 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { Bus, ChevronDown, LogOut, Settings, User } from 'lucide-react'
+import { ChevronDown, LogOut, Settings, User } from 'lucide-react'
 import { useRouter, usePathname } from 'next/navigation'
+import { Logo } from '@/components/layout/logo'
 
 const navItems = [
   { label: 'Ficha', href: '/dashboard' },
@@ -45,14 +46,8 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo */}
-        <Link href={user ? '/dashboard' : '/'} className="flex items-center gap-2">
-          <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10">
-            <Bus className="h-6 w-6 text-primary" />
-          </div>
-          <span className="text-xl font-bold">
-            <span className="text-primary">OLA</span>
-            <span className="text-foreground"> SpA</span>
-          </span>
+        <Link href={user ? '/dashboard' : '/'} className="flex items-center">
+          <Logo size="md" showText={true} />
         </Link>
 
         {/* Navigation - Only show when logged in */}

@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { Bus, Globe, Mail, Phone, MapPin } from 'lucide-react'
+import { Globe, Mail, Phone, MapPin } from 'lucide-react'
+import { Logo } from '@/components/layout/logo'
 
 export function Footer() {
   return (
@@ -8,14 +9,8 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-4">
           {/* Brand */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10">
-                <Bus className="h-6 w-6 text-primary" />
-              </div>
-              <span className="text-xl font-bold">
-                <span className="text-primary">OLA</span>
-                <span className="text-foreground"> SpA</span>
-              </span>
+            <Link href="/" className="flex items-center">
+              <Logo size="md" showText={true} />
             </Link>
             <p className="text-sm text-muted-foreground">
               Gestión integral de transporte para operadores de buses en Chile.
