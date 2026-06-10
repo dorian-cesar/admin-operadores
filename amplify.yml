@@ -5,7 +5,6 @@ frontend:
       commands:
         # Instalar pnpm de forma global para que esté disponible en el contenedor de compilación
         - npm install -g pnpm
-        - pnpm config set only-built-dependencies msw,sharp
         - pnpm install --frozen-lockfile
     build:
       commands:
