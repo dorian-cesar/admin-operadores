@@ -3,12 +3,10 @@ frontend:
   phases:
     preBuild:
       commands:
-        # Instalar pnpm de forma global para que esté disponible en el contenedor de compilación
-        - npm install -g pnpm
-        - pnpm install --frozen-lockfile
+        - npm ci
     build:
       commands:
-        - pnpm run build
+        - npm run build
   artifacts:
     baseDirectory: .next
     files:
